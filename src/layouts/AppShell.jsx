@@ -106,12 +106,6 @@ export function Sidebar({ onNavigate }) {
         )}
       </nav>
       <div className="sidebar-footer">
-        <div className="sidebar-prompt">
-          <span className="sidebar-prompt-icon"><Sparkles size={15} /></span>
-          <strong>Make your next move count.</strong>
-          <p>Build a focused plan around the skills that matter most.</p>
-          <Link to="/profile" onClick={onNavigate}>Complete profile <span>→</span></Link>
-        </div>
         <div className="account-wrap">
           <button className="sidebar-account" type="button" aria-expanded={accountOpen} onClick={() => setAccountOpen((open) => !open)}>
             <span className="avatar">{initials}</span>
@@ -197,12 +191,6 @@ export function AuthLayout({ children, mode = "login" }) {
           <p className="eyebrow">Your career, with clarity</p>
           <h1>Turn potential<br /><em>into progress.</em></h1>
           <p>Know your skills. Close your gaps. Build the career you are ready for.</p>
-        </div>
-        <div className="auth-signal-card">
-          <div className="signal-card-top"><span className="signal-pulse" />Career readiness <span>—</span></div>
-          <strong>Assessment<span> pending</span></strong>
-          <div className="signal-bar signal-bar-pending"><span /></div>
-          <small>Complete your skill assessment to begin</small>
         </div>
         <div className="auth-orbit orbit-one" />
         <div className="auth-orbit orbit-two" />

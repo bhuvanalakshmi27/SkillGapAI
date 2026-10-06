@@ -466,6 +466,11 @@ h1, h2, h3 { font-family: var(--heading); }
   .settings-status-panel { align-items: flex-start; flex-wrap: wrap; }
   .settings-status-panel .badge { margin-left: 39px; }
 }
+
+/* Keep the login hero in the top section of the visual panel. */
+.auth-visual { justify-content: flex-start; }
+.auth-visual-copy { margin: 74px auto 0; text-align: center; }
+.auth-visual-copy > p:last-child { margin-right: auto; margin-left: auto; }
 @media (max-width: 980px) { .resume-summary-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 640px) {
   .resume-upload-card, .resume-report-card, .resume-alignment-card, .resume-result-header { padding: 16px; }
