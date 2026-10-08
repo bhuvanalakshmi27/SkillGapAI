@@ -1,4 +1,7 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000"
+    : "https://skillgap-ai-backend-8gws.onrender.com";
 
 async function request(endpoint, options = {}) {
   const token = localStorage.getItem("token");
